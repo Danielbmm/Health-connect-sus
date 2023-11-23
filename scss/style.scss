@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+    scroll-behavior: smooth;
+}
+
+.pai{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-areas: 
+                    "first-Section first-Section first-side"
+                    "first-Section first-Section Second-side"
+                    "Second-section Second-section Third-side"
+                    "First-low Second-low Third-low";
+
+    .first-Section{
+        grid-area: first-Section;
+        background-image: url(../assets/baloygirl.png); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 120% 150%;
+
+    }
+
+    .Second-section{
+        grid-area: Second-section;
+        background-color: #908a9e;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h2{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        p{
+            width: 80%;
+            font-size: 20px;
+            font-weight: 10;
+        }
+        
+    }
+
+    
+    
+    
+    
+    
+    .first-side{
+        grid-area: first-side;
+        background-color: #908a9e;
+    }
+
+    .Second-side{
+        grid-area: Second-side;
+        background-color: #908a9e;
+    }
+
+    .Third-side{
+        grid-area: Third-side;
+        background-color: #908a9e;
+    }
+
+    
+    
+    
+    
+    
+    
+    .First-low{
+        grid-area: First-low;
+        
+        background-color: #564FD8;
+        display: flex;
+    }
+
+    .Second-low{
+        grid-area: Second-low;
+        
+        background-color: #564FD8;
+        display: flex;
+    }
+
+    .Third-low{
+        grid-area: Third-low;
+        
+        background-color: #564FD8;
+        display: flex;
+    }
+
+    .img-low{
+        width: 100px;
+        aspect-ratio: 1;
+        object-fit: contain;
+
+    }
+
+
+
+
+
+
+
+    
+
+    
+                    
+
+
+
+}
